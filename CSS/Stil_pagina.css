@@ -87,7 +87,7 @@ body {                                                   /* Adaugare imagine de 
  width: 180%;
  padding-left: 20%;
  padding-top: 15%;
- color: white;
+ color: rgb(207, 207, 207);
 
 
 
@@ -155,7 +155,7 @@ body {                                                   /* Adaugare imagine de 
    padding-left: 20%;
    margin-top: 0px;
    padding-top: 0px;
-   color: white;
+   color: rgb(216, 216, 216);
 
 
 
@@ -307,7 +307,7 @@ nav{                                                      /* Setari basic pentru
   justify-content: space-around;
   align-items: center;
   min-height: 8vh;
-  background-color: #ff6600;
+  background-color: #000000;
 }
 
 .lista-navigare{                                          /* Afisarea barei de navigatie */
@@ -321,7 +321,7 @@ nav{                                                      /* Setari basic pentru
   list-style: none;
 }
 .lista-navigare a{                                               /* Pentru afisarea specificatorilo de pagina din bara de navigatie STIL DESCKTOP*/
-  color: white;
+  color: rgb(233, 231, 231);
   text-decoration: none;
   letter-spacing: 3px;
   font-weight: bold;
@@ -329,30 +329,67 @@ nav{                                                      /* Setari basic pentru
 
 }
 .menu1:hover {
-  color: black;
+  color: rgb(107, 107, 107);
 }
 .menu2:hover {
-  color: black;
+  color: rgb(107, 107, 107);
 }
 .menu3:hover {
-  color: black;
+  color: rgb(107, 107, 107);
 }
 .menu4:hover {
-  color: black;
+  color: rgb(107, 107, 107);
 }
 .buton-mobil{                                                   /* Pentru butonul de meniu STIL DESCKTOP*/
   display: none;
   cursor: pointer;
 }
 
-.buton-mobil div{                                                 /* Butonul de MENIU*/
+.linie1{                                                   /* Pentru butonul de meniu STIL DESCKTOP*/
   width: 25px;
   height: 3px;
   margin: 5px;
-  background-color: white;
+  background-color: rgb(226, 224, 224);    
   transition: all 0.3s ease;
+}
+
+.linie2{                                                   /* Pentru butonul de meniu STIL DESCKTOP*/
+  width: 25px;
+  height: 3px;
+  margin: 5px;
+  background-color: rgb(226, 224, 224);    
+  transition: all 0.3s ease;
+}
+
+.linie21{ 
+  visibility: visible;                                                  /* Pentru butonul de meniu STIL DESCKTOP*/
+  opacity: 100;
+  color: rgb(226, 224, 224);    
+  transition: all 0.5s ease;
+}
+
+.linie22{  
+  visibility: hidden;   
+  color: rgb(226, 224, 224);                                             /* Pentru butonul de meniu STIL DESCKTOP*/
 
 }
+
+
+
+.linie3{                                                   /* Pentru butonul de meniu STIL DESCKTOP*/
+  width: 25px;
+  height: 3px;
+  margin: 5px;
+  background-color: rgb(226, 224, 224);    
+  transition: all 0.3s ease;
+}
+
+.buton-mobil div{                                                 /* Butonul de MENIU*/
+  opacity: 100;
+
+}
+
+
 
 
 @media screen and (max-width:3000px){                             /* in fuctie de marimea ferestrei adaugam ajustari ;a bara de navigatie */
@@ -460,7 +497,7 @@ nav{                                                      /* Setari basic pentru
     right: 0px;
     height: 92vh;
     top: 8vh;
-    background-color:#ff6600;
+    background-color:#000000;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -505,7 +542,7 @@ nav{                                                      /* Setari basic pentru
     right: 0px;
     height: 92vh;
     top: 8vh;
-    background-color: #ff6600;
+    background-color: #000000;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -546,7 +583,7 @@ nav{                                                      /* Setari basic pentru
     right: 0px;
     height: 92vh;
     top: 8vh;
-    background-color: #ff6600;
+    background-color: #000000;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -623,6 +660,21 @@ nav{                                                      /* Setari basic pentru
   opacity: 0;
 
 }
+.transformare-buton-meniu .linie21{
+  opacity: 0;
+  visibility: hidden;
+  transition: all .2s ease;
+
+}
+
+.transformare-buton-meniu .linie22{
+  opacity: 100;
+  visibility: visible;
+
+  transition: all .6s ease;
+
+}
+
 .transformare-buton-meniu .linie3{
     transform: rotate(+45deg) translate(-5px,-6px);
 }
